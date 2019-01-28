@@ -1,7 +1,12 @@
-# Display comments in a blog
+# Comments
 
-Concepts Learned: Component Nesting and Props
+Display comments on a blog.
 
-## Final Result:
+### Concepts Learned
+
+- Component Nesting
+- Props
+
+## Final Result
 
 ![Final Result](display.png)
