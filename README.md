@@ -8,5 +8,6 @@ This repository contains all the react apps that I had created while learing Rea
 2. [components](components/)
 3. [seasons](seasons/)
 4. [pics](pics/)
+5. [videos](videos/)
 
 P.S. All apps are added as a git-subtree to this parent repository.
