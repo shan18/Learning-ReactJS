@@ -1,5 +1,12 @@
 # Learning ReactJS
 
-This repository contains all the react apps that I created while learing React JS.
+This repository contains all the react apps that I had created while learing React JS.
 
-P.S. All apps are added as a subtree to this parent repository.
+## List of Apps
+
+1. [JSX](jsx/)
+2. [components](components/)
+3. [seasons](seasons/)
+4. [pics](pics/)
+
+P.S. All apps are added as a git-subtree to this parent repository.
