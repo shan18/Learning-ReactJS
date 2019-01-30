@@ -3,7 +3,11 @@ import React from 'react';
 const VideoDetail = ({ video }) => {
   if (!video) {
     // Initial value of video is null
-    return <div>Loading...</div>;
+    return (
+      <div className="ui active centered inline big text loader">
+        Loading...
+      </div>
+    );
   }
 
   const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}`;
