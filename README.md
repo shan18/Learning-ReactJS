@@ -1,6 +1,6 @@
-# Learning ReactJS
+# React with Redux
 
-This repository contains all the react apps that I had created while learing React JS.
+This repository contains all the react apps that I had created while learing React JS and Redux.
 
 ## List of Apps
 
@@ -11,3 +11,4 @@ This repository contains all the react apps that I had created while learing Rea
 5. [videos](videos/)
 
 P.S. All apps are added as a git-subtree to this parent repository.
+
