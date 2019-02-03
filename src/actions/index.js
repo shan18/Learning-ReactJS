@@ -9,8 +9,15 @@ export const fetchPostsAndUsers = () => async (dispatch, getState) => {
   await dispatch(fetchPosts()); // await ensures that the parent waits for the child to finish
 
   // it first returns an array of userId from posts and then extracts all the unique userIds
-  const userIds = _.uniq(_.map(getState().posts, 'userId'));
-  userIds.forEach(id => dispatch(fetchUser(id)));
+  _.chain(getState().posts) // chain will add the posts automatically as the first arg of the chained functions
+    .map('userId')
+    .uniq()
+    .forEach(id => dispatch(fetchUser(id)))
+    .value(); // this will execute the chain above
+
+  // alternate version of the userIds portion above
+  // const userIds = _.uniq(_.map(getState().posts, 'userId'));
+  // userIds.forEach(id => dispatch(fetchUser(id)));
 
   // if we want to wait for the userid to be fetched:
   // await Promise.all(userIds.map(id => dispatch(fetchUser(id))));
