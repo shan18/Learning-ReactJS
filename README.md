@@ -10,6 +10,7 @@ This repository contains all the react apps that I had created while learing Rea
 4. [pics](pics/)
 5. [videos](videos/)
 6. [songs](songs/)
+7. [blog](blog/)
 
 P.S. All apps are added as a git-subtree to this parent repository.
 
