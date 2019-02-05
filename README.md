@@ -10,16 +10,16 @@ Allow users to create and show live streams.
 ## App Overview
 
 <p float="left">
-  <img src="mockup_images/index_page_guest.jpg" hspace="20" />
-  <img src="mockup_images/index_page_user.jpg" hspace="20" />
+  <img src="mockup_images/index_page_guest.jpg" width="420" hspace="10" />
+  <img src="mockup_images/index_page_user.jpg" width="420" />
 </p>
 <p float="left">
-  <img src="mockup_images/show_stream.png" hspace="20" />
-  <img src="mockup_images/create_stream.png" hspace="20" />
+  <img src="mockup_images/show_stream.png" width="420" hspace="10" />
+  <img src="mockup_images/create_stream.png" width="420" />
 </p>
 <p float="left">
-  <img src="mockup_images/edit_stream.png" hspace="20" />
-  <img src="mockup_images/delete_stream.png" hspace="20" />
+  <img src="mockup_images/edit_stream.png" width="420" hspace="10" />
+  <img src="mockup_images/delete_stream.png" width="420" />
 </p>
 
 ## App Flow
