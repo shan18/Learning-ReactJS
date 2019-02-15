@@ -2,15 +2,11 @@ import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 
 class StreamCreate extends React.Component {
-  renderInput(formProps) {
-    // formProps is sent by the redux-form package
+  renderInput({ input }) {
+    // the object sent as the parameter to this function
+    // is given by the redux-form package
     // and contains various required configuration properties
-    return (
-      <input
-        onChange={formProps.input.onChange}
-        value={formProps.input.value}
-      />
-    );
+    return <input {...input} />;
   }
 
   render() {
