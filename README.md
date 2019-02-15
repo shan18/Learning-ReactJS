@@ -6,6 +6,9 @@ Allow users to create and show live streams.
 
 - React Router
 - Router Types in Traditional Servers
+- Handling Authentication
+- Redux Dev Tools
+- Redux Form
 
 ## App Overview
 
