@@ -2,18 +2,29 @@ import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 
 class StreamCreate extends React.Component {
-  renderInput({ input, label, meta }) {
+  renderError({ error, touched }) {
+    if (touched && error) {
+      return (
+        <div className="ui error message">
+          <div className="header">{error}</div>
+        </div>
+      );
+    }
+  }
+
+  renderInput = ({ input, label, meta }) => {
     // the object sent as the parameter to this function
     // is given by the redux-form package
     // and contains various required configuration properties
+    const className = `field ${meta.touched && meta.error ? 'error' : ''}`;
     return (
-      <div className="field">
+      <div className={className}>
         <label>{label}</label>
-        <input {...input} />
-        <div>{meta.error}</div>
+        <input {...input} autoComplete="off" />
+        {this.renderError(meta)}
       </div>
     );
-  }
+  };
 
   onSubmit(formValues) {
     console.log(formValues);
@@ -24,7 +35,9 @@ class StreamCreate extends React.Component {
       // The handleSubmit function takes care of event.preventDefault() as well as some other
       // functions and passes on the form field values to the callback function
       <form
-        className="ui form"
+        // If we don't include the error class then semantic-ui is automatically
+        // going to hide all the error messages
+        className="ui form error"
         onSubmit={this.props.handleSubmit(this.onSubmit)}
       >
         {/*
