@@ -14,9 +14,18 @@ class StreamCreate extends React.Component {
     );
   }
 
+  onSubmit(formValues) {
+    console.log(formValues);
+  }
+
   render() {
     return (
-      <form className="ui form">
+      // The handleSubmit function takes care of event.preventDefault() as well as some other
+      // functions and passes on the form field values to the callback function
+      <form
+        className="ui form"
+        onSubmit={this.props.handleSubmit(this.onSubmit)}
+      >
         {/*
           Whatever additional properties we specify in <Field /> automatically gets sent to
           the renderInput() function.
@@ -27,6 +36,7 @@ class StreamCreate extends React.Component {
           component={this.renderInput}
           label="Enter Description"
         />
+        <button className="ui button primary">Submit</button>
       </form>
     );
   }
