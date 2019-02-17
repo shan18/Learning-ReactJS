@@ -33,7 +33,11 @@ Allow users to create and show live streams.
 
 ## App Flow
 
-![App Flow](mockup_images/app_flow.png)
+High-level view:
+![App Flow v1](mockup_images/app_flow_v1.png)
+
+Detailed view:
+![App Flow v2](mockup_images/app_flow_v2.png)
 
 ## Component Hierarchy
 
