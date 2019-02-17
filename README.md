@@ -9,6 +9,7 @@ Allow users to create and show live streams.
 - Handling Authentication
 - Redux Dev Tools
 - Redux Form
+- JSON Server
 
 ## App Overview
 
