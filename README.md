@@ -43,3 +43,7 @@ Detailed view:
 ## Component Hierarchy
 
 ![Component Hierarchy](mockup_images/component_hierarchy.png)
+
+## Streams RESTful API Conventions
+
+![REST API](rest_api.png)
