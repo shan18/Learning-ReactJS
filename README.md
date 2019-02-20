@@ -46,4 +46,4 @@ Detailed view:
 
 ## Streams RESTful API Conventions
 
-![REST API](rest_api.png)
+![REST API](mockup_images/rest_api.png)
