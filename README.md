@@ -10,6 +10,8 @@ Allow users to create and show live streams.
 - Redux Dev Tools
 - Redux Form
 - JSON Server
+- REST-ful Conventions
+- Programmatic Navigation
 
 ## App Overview
 
