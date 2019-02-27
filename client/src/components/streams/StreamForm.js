@@ -27,7 +27,7 @@ class StreamForm extends React.Component {
   };
 
   onSubmit = formValues => {
-    this.props.onSumbit(formValues);
+    this.props.onSubmit(formValues);
   };
 
   render() {
