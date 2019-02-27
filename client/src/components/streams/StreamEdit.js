@@ -6,7 +6,7 @@ import StreamForm from './StreamForm';
 
 class StreamEdit extends React.Component {
   onSubmit = formValues => {
-    console.log(formValues);
+    this.props.editStream(this.props.match.params.id, formValues);
   };
 
   componentDidMount() {
