@@ -12,6 +12,7 @@ Allow users to create and show live streams.
 - JSON Server
 - REST-ful Conventions
 - Programmatic Navigation
+- Code Reuse
 
 ## App Overview
 
