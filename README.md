@@ -13,6 +13,7 @@ Allow users to create and show live streams.
 - REST-ful Conventions
 - Programmatic Navigation
 - Code Reuse
+- Portals
 
 ## App Overview
 
