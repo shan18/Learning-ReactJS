@@ -14,6 +14,7 @@ Allow users to create and show live streams.
 - Programmatic Navigation
 - Code Reuse
 - Portals
+- Event Propagation
 
 ## App Overview
 
