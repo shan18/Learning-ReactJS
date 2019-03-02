@@ -15,6 +15,7 @@ Allow users to create and show live streams.
 - Code Reuse
 - Portals
 - Event Propagation
+- React Fragments
 
 ## App Overview
 
