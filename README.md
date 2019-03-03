@@ -18,6 +18,7 @@ Allow users to create and show live streams.
 - Event Propagation
 - React Fragments
 - RTMP Server (Node-Media-Server)
+- Using _flv.js_ package
 
 ## App Overview
 
