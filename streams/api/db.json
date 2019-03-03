@@ -1,0 +1,25 @@
+{
+  "streams": [
+    {
+      "title": "Dark Side",
+      "description": "this is a star wars stream",
+      "id": 1
+    },
+    {
+      "title": "Batman",
+      "description": "This is a batman-the dark knight stream.",
+      "id": 2
+    },
+    {
+      "title": "DC",
+      "description": "This streams all DC movies one by one",
+      "userId": "112581806241335394317",
+      "id": 3
+    },
+    {
+      "title": "Programmatic Navigation",
+      "description": "stream editing",
+      "id": 4
+    }
+  ]
+}
