@@ -25,6 +25,16 @@ class StreamShow extends React.Component {
     this.buildPlayer();
   }
 
+  componentWillUnmount() {
+    // Once the video player is built, it remains open
+    // even if we move away from the component. It stops
+    // only when the streaming is stopped from the source.
+    // This wastes a lot of resources. So we need to stop
+    // the video player whenever we move away from the component.
+    // Hence, the need for this lifecycle method.
+    this.player.destroy();
+  }
+
   // build video player for streaming
   buildPlayer() {
     if (this.player || !this.props.stream) {
