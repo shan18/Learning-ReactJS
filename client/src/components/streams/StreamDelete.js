@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 import Modal from '../Modal';
 import history from '../../history';
@@ -11,10 +12,21 @@ class StreamDelete extends React.Component {
   }
 
   renderActions() {
+    const { id } = this.props.match.params;
     return (
+      // We use a arrow function in delete onClick
+      // instead of directly referencing the function because the
+      // action creator requires an id parameter
       <React.Fragment>
-        <button className="ui button negative">Delete</button>
-        <button className="ui button">Cancel</button>
+        <button
+          onClick={() => this.props.deleteStream(id)}
+          className="ui button negative"
+        >
+          Delete
+        </button>
+        <Link to="/" className="ui button">
+          Cancel
+        </Link>
       </React.Fragment>
     );
 
