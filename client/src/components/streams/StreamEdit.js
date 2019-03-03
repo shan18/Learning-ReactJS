@@ -10,6 +10,9 @@ class StreamEdit extends React.Component {
   };
 
   componentDidMount() {
+    // If the edit page is loaded directly then the stream list
+    // would not have been fetched by the app, so to ensure proper
+    // working, every component must load its own data.
     this.props.fetchStream(this.props.match.params.id);
   }
 
@@ -31,6 +34,8 @@ class StreamEdit extends React.Component {
 }
 
 const mapStateToProps = (state, ownProps) => {
+  // The id of the required stream is inside the props
+  // so ownProps param is used to fetch the props of the component
   return {
     stream: state.streams[ownProps.match.params.id]
   };
