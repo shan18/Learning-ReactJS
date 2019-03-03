@@ -17,6 +17,7 @@ Allow users to create and show live streams.
 - Portals
 - Event Propagation
 - React Fragments
+- RTMP Server (Node-Media-Server)
 
 ## App Overview
 
