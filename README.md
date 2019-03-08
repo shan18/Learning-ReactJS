@@ -10,10 +10,12 @@ Display a form in different languages.
 
 ![App Overview](app_overview.png)
 
-## App Flow
+## Before Commit [Replacing Redux with Context](339201095518627a01483fb55af97bf566056ec1)
 
-![App_flow](app_flow.png)
+### App Flow
 
-## Component Hierarchy
+![App_flow_v1](app_flow_v1.png)
+
+### Component Hierarchy
 
 ![Component Hierarchy](component_hierarchy.png)
