@@ -14,7 +14,6 @@ export class LanguageStore extends React.Component {
   };
 
   render() {
-    console.log(this.props.children);
     return (
       <Context.Provider
         value={{ ...this.state, onLanguageChange: this.onLanguageChange }}
@@ -34,4 +33,8 @@ export class LanguageStore extends React.Component {
   }
 }
 
+// LanguageStore is exported because we had to wrap all the components inside
+// the Context.Provider.
+// Context is exported so that the wrapped components could access or change
+// the data in store.
 export default Context;

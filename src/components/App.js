@@ -1,16 +1,12 @@
 import React from 'react';
 import UserCreate from './UserCreate';
-import LanguageContext from '../context/LanguageContext';
+import { LanguageStore } from '../context/LanguageContext';
 import ColorContext from '../context/ColorContext';
 import LanguageSelector from './LanguageSelector';
 import ButtonColorSelector from './ButtonColorSelector';
 
 class App extends React.Component {
-  state = { language: 'english', color: 'primary' };
-
-  onLanguageChange = language => {
-    this.setState({ language });
-  };
+  state = { color: 'primary' };
 
   onColorChange = color => {
     this.setState({ color });
@@ -19,18 +15,18 @@ class App extends React.Component {
   render() {
     return (
       <div className="ui container">
-        <LanguageSelector onLanguageChange={this.onLanguageChange} />
+        <LanguageStore>
+          <LanguageSelector />
 
-        <ButtonColorSelector onColorChange={this.onColorChange} />
+          <ButtonColorSelector onColorChange={this.onColorChange} />
 
-        {/* It does not matter whether we wrap LanguageContext inside
-        ColorContext or the other way around. We just have to wrap
-        UserCreate inside both the Providers. */}
-        <ColorContext.Provider value={this.state.color}>
-          <LanguageContext.Provider value={this.state.language}>
+          {/* It does not matter whether we wrap LanguageContext inside
+          ColorContext or the other way around. We just have to wrap
+          UserCreate inside both the Providers. */}
+          <ColorContext.Provider value={this.state.color}>
             <UserCreate />
-          </LanguageContext.Provider>
-        </ColorContext.Provider>
+          </ColorContext.Provider>
+        </LanguageStore>
       </div>
     );
   }
