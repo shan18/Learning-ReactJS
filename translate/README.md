@@ -20,7 +20,7 @@ Display a form in different languages.
 
 ![Component Hierarchy](component_hierarchy.png)
 
-## After Commit [Replacing Redux with Context](https://github.com/shan18/React-with-Redux/tree/baaad2024ffb80f4439f1f538b43880041b670db)
+## After Commit [Replacing Redux with Context](https://github.com/shan18/React-with-Redux/tree/b1a93cf82ae510e8a2fdbba39e5bca8b24655e32)
 
 ### App Flow
 
