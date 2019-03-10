@@ -3,6 +3,7 @@ import UserCreate from './UserCreate';
 import LanguageContext from '../context/LanguageContext';
 import ColorContext from '../context/ColorContext';
 import LanguageSelector from './LanguageSelector';
+import ButtonColorSelector from './ButtonColorSelector';
 
 class App extends React.Component {
   state = { language: 'english', color: 'primary' };
@@ -20,21 +21,7 @@ class App extends React.Component {
       <div className="ui container">
         <LanguageSelector onLanguageChange={this.onLanguageChange} />
 
-        <div>
-          Select a button color:
-          <button
-            className="ui button primary"
-            onClick={() => this.onColorChange('primary')}
-          >
-            Blue
-          </button>
-          <button
-            className="ui button red"
-            onClick={() => this.onColorChange('red')}
-          >
-            Red
-          </button>
-        </div>
+        <ButtonColorSelector onColorChange={this.onColorChange} />
 
         {/* It does not matter whether we wrap LanguageContext inside
         ColorContext or the other way around. We just have to wrap
