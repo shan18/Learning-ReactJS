@@ -76,4 +76,8 @@ This repository contains all the react apps that I had created while learing Rea
 
 - Context System
 
+### 8. [hooks-simple](hooks-simple/)
+
+- Hooks
+
 P.S. All apps are added as a git-subtree to this parent repository.
