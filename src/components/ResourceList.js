@@ -11,6 +11,17 @@ class ResourceList extends React.Component {
     this.setState({ resources: response.data });
   }
 
+  async componentDidUpdate(prevProps) {
+    // prevProps parameter contains the value of the props
+    // before the component had been updated.
+    if (prevProps.resource !== this.props.resource) {
+      const response = await axios.get(
+        `http://jsonplaceholder.typicode.com/${this.props.resource}`
+      );
+      this.setState({ resources: response.data });
+    }
+  }
+
   render() {
     return <div>{this.state.resources.length}</div>;
   }
