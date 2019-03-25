@@ -4,7 +4,7 @@ Display season based on user location and time using hooks.
 
 ### Concepts Learned
 
-- Hooks
+- More on Hooks
 
 ## App Overview
 

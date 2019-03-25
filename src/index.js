@@ -1,49 +1,30 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 
 import SeasonDisplay from './SeasonDisplay';
 import Spinner from './Spinner';
 
-class App extends React.Component {
-  state = { lat: null, errorMessage: '' }; // Babel will do this initialization inside a constructor
+const App = () => {
+  const [lat, setLat] = useState(null);
+  const [errorMessage, setErrorMessage] = useState('');
 
-  componentDidMount() {
-    // Get user location
+  useEffect(() => {
     window.navigator.geolocation.getCurrentPosition(
-      // This can return two function callbacks
-      position => {
-        // Success callback
-        this.setState({
-          lat: position.coords.latitude
-        }); // update with setState
-
-        // never do this!!!
-        // this statement makes react create a new state instead of updating the existing one
-        // thereby, throwing an error
-        // this.state.lat = position.coords.latitude
-      },
-      err => {
-        // Faliure callback
-        this.setState({
-          errorMessage: err.message
-        });
-      }
+      position => setLat(position.coords.latitude),
+      err => setErrorMessage(err.message)
     );
+  }, []);
+
+  let content;
+  if (errorMessage) {
+    content = <div>Error: {errorMessage}</div>;
+  } else if (lat) {
+    content = <SeasonDisplay lat={lat} />;
+  } else {
+    content = <Spinner message="Please accept the location request" />;
   }
 
-  renderContent() {
-    if (this.state.errorMessage && !this.state.lat) {
-      return <div>Error: {this.state.errorMessage}</div>;
-    }
-    if (!this.state.errorMessage && this.state.lat) {
-      return <SeasonDisplay lat={this.state.lat} />;
-    }
-    return <Spinner message="Please accept the location request" />;
-  }
-
-  render() {
-    return <div>{this.renderContent()}</div>;
-  }
-}
+  return <div className="border red">{content}</div>;
+};
 
 ReactDOM.render(<App />, document.querySelector('#root'));
