@@ -12,9 +12,13 @@ const Dropdown = ({ options, selected, onSelectedChange }) => {
       setOpen(false);
     };
 
+    // This listener was create by native JS thus during event bubbling
+    // this will be executed first
     document.body.addEventListener('click', onBodyClick, { capture: true });
 
     return () => {
+      // This is done because if this component is unmounted then the
+      // listener will still be active and point to null element
       document.body.removeEventListener('click', onBodyClick, {
         capture: true,
       });
@@ -54,7 +58,6 @@ const Dropdown = ({ options, selected, onSelectedChange }) => {
           </div>
         </div>
       </div>
-      <div style={{ color: selected.value }}>The text is {selected.value}</div>
     </>
   );
 };

@@ -34,7 +34,7 @@ const options = [
 ];
 
 const App = () => {
-  const [selected, setSelected] = useState(options[2]);
+  const [color, setColor] = useState(options[2]);
   const [showDropdown, setShowDropdown] = useState(true);
 
   return (
@@ -45,11 +45,14 @@ const App = () => {
         Toggle Dropdown
       </button>
       {showDropdown ? (
-        <Dropdown
-          selected={selected}
-          onSelectedChange={setSelected}
-          options={options}
-        />
+        <>
+          <Dropdown
+            selected={color}
+            onSelectedChange={setColor}
+            options={options}
+          />
+          <div style={{ color: color.value }}>The text is {color.value}</div>
+        </>
       ) : null}
     </div>
   );
