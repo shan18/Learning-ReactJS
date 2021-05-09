@@ -14,6 +14,7 @@ const Search = () => {
     // We can return only a function from useEffect
     // This function is used to do some cleanup i.e. it will be
     // executed when useEffect is called next.
+    // This will also run when component is unmounted.
     return () => {
       clearTimeout(timerId);
     };
