@@ -80,7 +80,7 @@ This repository contains all the react apps that I had created while learing Rea
 
 - Hooks
 
-### 8. [seasons-hooks](seasons-hooks/)
+### 11. [seasons-hooks](seasons-hooks/)
 
 - More on Hooks
 
