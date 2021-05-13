@@ -21,5 +21,3 @@ Create widgets
   <img src="mockup_images/dropdown.png" width="410" hspace="10" />
   <img src="mockup_images/translate.png" width="410" />
 </p>
-
-## Final Results
