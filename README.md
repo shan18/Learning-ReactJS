@@ -72,11 +72,11 @@ This repository contains all the react apps that I had created while learing Rea
 - RTMP Server (Node-Media-Server)
 - Using _flv.js_ package
 
-### 8. [translate](translate/)
+### 9. [translate](translate/)
 
 - Context System
 
-### 8. [hooks-simple](hooks-simple/)
+### 10. [widgets](widgets/)
 
 - Hooks
 
