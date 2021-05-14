@@ -1,6 +1,6 @@
 # React with Redux
 
-This repository contains all the react apps that I had created while learing React JS and Redux.
+This repository contains all the react apps that I had created while learing React JS and Redux from the course [Modern React with Redux](https://www.udemy.com/course/react-redux/?utm_source=adwords&utm_medium=udemyads&utm_campaign=LongTail_la.EN_cc.INDIA&utm_content=deal4584&utm_term=_._ag_77882236463_._ad_437477391738_._kw__._de_c_._dm__._pl__._ti_dsa-1007766171312_._li_9061995_._pd__._&matchtype=b&gclid=EAIaIQobChMIjenDl9HJ8AIV2MFMAh0kwQThEAAYASAAEgL49_D_BwE) on Udemy.
 
 ## List of Apps and Concepts Learned in Each
 
